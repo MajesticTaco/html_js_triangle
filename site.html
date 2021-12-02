@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="sitejs.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript function to find the perimeter, area and effectivity of a triangle</title>
+  <script src="sitejs.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center>
-        <h1>Kalkulators</h1>
-        <p1><b>Aprēķināt trijstura perimetru, laukumu un efektivitāti</b></p1>
-        <p>A Mala: <input type="text" id="a"/></p>
-        <br>
-        <p>B Mala: <input type="text" id="b"/></p>
-        <br>
-        <p>Hipotenūza: <input type="text" id="c"/></p>
-        <br>
-         <button type="button" onclick="trijsturis()">Atrast lielumus</button>
-        <br>
-        <p>Perimetrs: <span id="result"></span></p>
-        <p>Laukums: <span id="result1"></span></p>
-        <p>Efektivitāte <span id="result2"></span></p>
-    </center>
+  <div class="sidebar bar-block border-right" style="display:none" id="mySidebar">
+    <button onclick="sidebar_close()" class="bar-item large">Close ×</button> <a href="#" class="bar-item button">Link 1</a> <a href="#" class="bar-item button">Link 2</a> <a href="#" class="bar-item button">Link 3</a>
+  </div><button class="button teal xlarge" onclick="sidebar_open()">☰</button>
+  <h1>Javascript Kalkulators</h1><b>Aprēķināt trijstūra perimetru, laukumu un efektivitāti</b>
+  <p>A Mala: <input type="text" id="a"></p><br>
+  <p>B Mala: <input type="text" id="b"></p><br>
+  <p>C Mala: <input type="text" id="c"></p><br>
+  <button type="button" onclick="trijsturis()">Atrast lielumus</button><br>
+  <p>Perimetrs: <span id="result"></span></p>
+  <p>Laukums: <span id="result1"></span></p>
+  <p>Efektivitāte: <span id="result2"></span></p>
 </body>
 </html>

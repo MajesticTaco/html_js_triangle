@@ -5,8 +5,8 @@ function trijsturis() {
 
   var s = (a + b + c) / 2;
   var area = Math.sqrt(s * ((s - a) * (s - b) * (s - c)));
-  var perimeter = a + b + c
-  var efect = area / perimeter
+  var perimeter = a + b + c;
+  var effect = area / perimeter;
 
   var result = document.getElementById("result");
   result.innerHTML = ' ' + perimeter;
@@ -15,5 +15,13 @@ function trijsturis() {
   result1.innerHTML = ' ' + area;
 
   var result2 = document.getElementById("result2");
-  result2.innerHTML = ' ' + efect;
+  result2.innerHTML = ' ' + effect;
+}
+
+function sidebar_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function sidebar_close() {
+  document.getElementById("mySidebar").style.display = "none";
 }
